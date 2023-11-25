@@ -47,7 +47,7 @@ export default function Contact() {
         Have a question, suggestion, or just want to connect with the Us? We'd love to hear from you! Use the contact form below to drop us a message, and we'll get back to you as soon as possible.
         </p>
       </div>
-      <form onSubmit={handleForm} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-white">
