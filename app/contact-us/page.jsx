@@ -24,7 +24,7 @@ function classNames(...classes) {
 export default function Contact() {
   const [agreed, setAgreed] = useState(false)
   const handleForm =()=>{
-    alert('Feed back recieved...We will contact you soon :)')
+    confirm('Feed back recieved...We will contact you soon :)')
   }
 
   return (
