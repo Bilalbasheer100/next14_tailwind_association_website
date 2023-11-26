@@ -1,5 +1,5 @@
 import Image from "next/image"
-import computer2 from "@/public/assets/images/computer2.png"
+import computer2 from "@/public/assets/images/regal.png"
 
 const links = [
   { name: 'Upcoming Events', href: '/upcoming-events' },
@@ -15,9 +15,10 @@ export default function About() {
       
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-   <div className="flex md:flex-row flex-col justify-between ">
-        <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-red-400 sm:text-6xl">About us</h2>
+   <div className="flex md:flex-row flex-col-reverse justify-between mt-5  ">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          
           <p className="mt-6 text-lg leading-8 text-gray-300">
           Welcome to the heart of sports and community at CSE Department Association! Established with a vision to foster a vibrant and inclusive sports culture, we take pride in our role as a catalyst for camaraderie and excellence.We are driven by the collective enthusiasm of our members, whose love for sports transcends the boundaries of the playing field. Together, we strive to create an environment that not only encourages healthy competition but also nurtures personal growth, teamwork, and resilience.
 
@@ -25,9 +26,12 @@ export default function About() {
           </p>
           
         </div>
-        <div className="mt-10">
-          <Image src={computer2} width={300} height={300} />
+        <div className="w-[320px] h-[320px] bg-white flex items-center justify-center">
+        <div className=" ">
+          <Image  alt ='pic' src={computer2} width={300} height={300} />
         </div>
+        </div>
+        
 
         </div>
 
