@@ -2,13 +2,13 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import computer from '@/public/assets/images/computer2.png'
+import computer from '@/public/assets/images/regal.png'
 import Image from 'next/image'
 
 
 const navigation = [
 
-  { name: 'CSE', href: '/', current: true },
+  { name: 'REGAL CSE', href: '/', current: true },
   { name: 'Home', href: '/', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Team', href: '/team', current: false },
@@ -41,9 +41,9 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="sm:block hidden flex flex-shrink-0 items-center">
+                <div className="sm:block hidden  flex-shrink-0 items-center">
                 
-                  <Image src={computer} className='h-8 w-auto  rounded-full'/>
+                  <Image src={computer} alt='profile' className='h-8 w-auto  rounded-full'/>
 
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -53,7 +53,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-gray-900 text-red-400' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}

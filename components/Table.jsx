@@ -11,65 +11,55 @@ import {
   
   const invoices = [
     {
-      invoice: "1",
-      paymentStatus: "CSE",
-      totalAmount: "1000",
-      event:'4x100m'
+      rank: "1",
+      department: "CSE",
+      athletics: "62",
+      games:'45',
+      total:'107'
 
      
     },
     {
-      invoice: "2",
-      paymentStatus: "MECH",
-      totalAmount: "900",
-      event:'4x100m'
+        rank: "2",
+        department: "MECH",
+        athletics: "55",
+        games:'25',
+        total:'101'
 
      
     },
     {
-      invoice: "3",
-      paymentStatus: "CIVIL",
-      totalAmount: "800",
-      event:'4x100m'
+        rank: "3",
+        department: "AD",
+        athletics: "24",
+        games:'30',
+        total:'54'
 
      
     },
     {
-      invoice: "4",
-      paymentStatus: "AD",
-      totalAmount: "700",
-      event:'4x100m'
+        rank: "4",
+        department: "CE",
+        athletics: "28",
+        games:'15',
+        total:'43'
 
       
     },
     {
-      invoice: "5",
-      paymentStatus: "CYBER",
-      totalAmount: "600",
-      event:'4x100m'
+        rank: "5",
+        department: "1st YEAR",
+        athletics: "10",
+        games:'20',
+        total:'30'
 
       
     },
     {
-      invoice: "6",
-      paymentStatus: "EEE",
-      totalAmount: "450",
-      event:'4x100m'
-
-     
-    },
-    {
-      invoice: "7",
-      paymentStatus: "EC",
-      totalAmount: "300",
-      event:'4x100m'
-      
-    },
-    {
-        invoice: "",
-        paymentStatus: "",
-        totalAmount: "",
-        event: "",
+        rank: "",
+        department: "",
+        athletics: "",
+        games: "",
         
       },
   ]
@@ -79,24 +69,29 @@ import {
       <Table>
         <TableHeader>
         <TableRow>
-            <TableCell className=''></TableCell>
-            <TableCell className=""></TableCell>
+            
+            
           </TableRow>
 
           <TableRow>
-            <TableHead className="w-[100px] text-white bg-zinc-900">Rank</TableHead>
+            
+
+            <TableHead className="md:block hidden text-white bg-zinc-900 md:pt-3 ">Rank</TableHead>
             <TableHead className='text-white bg-zinc-900'>Department</TableHead>
-            <TableHead className='text-white  bg-zinc-900'>Event</TableHead>
-            <TableHead className="text-right text-white  bg-zinc-900">Total</TableHead>
+            <TableHead className='text-white  bg-zinc-900'>Athletics</TableHead>
+            <TableHead className='text-white  bg-zinc-900'>Games</TableHead>
+            <TableHead className=" text-white  bg-zinc-900">Total</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {invoices.map((invoice) => (
             <TableRow key={invoice.invoice}>
-              <TableCell className="font-medium text-white">{invoice.invoice}</TableCell>
-              <TableCell className='text-white'>{invoice.paymentStatus}</TableCell>
-              <TableCell className='text-white'>{invoice.event}</TableCell>
-              <TableCell className="text-right text-white">{invoice.totalAmount}</TableCell>
+                
+              <TableCell className="md:block hidden font-medium text-white">{invoice.rank}</TableCell>
+              <TableCell className='text-white'>{invoice.department}</TableCell>
+              <TableCell className='text-white'>{invoice.athletics}</TableCell>
+              <TableCell className=" text-white">{invoice.games}</TableCell>
+              <TableCell className=" text-white">{invoice.total}</TableCell>
             </TableRow>
             
           ))}
